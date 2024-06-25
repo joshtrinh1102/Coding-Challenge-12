@@ -53,7 +53,7 @@ svg.selectAll("g.bar")
     .on("mouseover", function () {
         d3.select(this).attr("fill", "green");
     })
-    .on("mouseover", function () {
+    .on("mouseout", function () {
             d3.select(this).attr("fill", "firebrick");
     })
 }
