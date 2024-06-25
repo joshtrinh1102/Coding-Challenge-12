@@ -49,6 +49,14 @@ svg.selectAll("g.bar")
         .attr("dy" , ".35em")
         .text (d)
     });
+    svg.selectAll("g.bar rect")
+    .on("mouseover", function () {
+        d3.select(this).attr("fill", "green");
+    })
+    .on("mouseover", function () {
+            d3.select(this).attr("fill", "firebrick");
+    })
+}
 
  
     
